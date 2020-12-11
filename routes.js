@@ -5,4 +5,5 @@ module.exports = function(app) {
     app.route('/getall').get(jesonku.getAll);
     app.route('/getbyid/:id').get(jesonku.getById);
     app.route('/post').post(jesonku.postData);
+    app.route('/update').put(jesonku.ubdateById);
 }
